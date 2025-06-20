@@ -1,0 +1,119 @@
+.experience {
+  display: flex;
+  padding: 150px 10%;
+  align-items: center;
+  gap: 143px;
+  background: var(--Gray-50, #f0f1f3);
+}
+
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Left Side Styling */
+.experience-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.experience-left h2 {
+  color: #333;
+
+  /* Heading/01 */
+  font-family: "Work Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 116.667% */
+}
+
+.experience-left p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 529px;
+  color: var(--Gray-400, #87909d);
+
+  /* Body/Large/400 */
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+
+/* Right Side Styling */
+.experience-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.experience-card {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 32px 96px 0px rgba(28, 25, 25, 0.16);
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Highlight card (current position) */
+.experience-card.highlight {
+  border-left: 5px solid #a53dff;
+}
+
+.experience-card h3 {
+  align-self: stretch;
+  color: var(--Gray-900, #132238);
+
+  /* Heading/04 */
+  font-family: "Work Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 24px */
+}
+
+.experience-card p {
+  font-family: Poppins;
+}
+
+.experience-card p:nth-child(2) {
+  color: #8b5cf6;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.experience-card p:nth-child(3) {
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.experience-card p:last-child {
+  width: 584px;
+  color: var(--Gray-700, #424e60);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}

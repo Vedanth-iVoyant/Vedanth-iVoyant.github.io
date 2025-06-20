@@ -1,0 +1,108 @@
+/* Contact Section Styling */
+.contact {
+  background: #132238;
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 26px;
+}
+
+.contact h2 {
+  color: var(--Gray-White, #fff);
+  text-align: center;
+
+  /* Heading/01 */
+  font-family: "Work Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 116.667% */
+}
+
+.contact p {
+  color: var(--Gray-300, #a5acb5);
+  text-align: center;
+
+  /* Body/Large/400 */
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  text-align: start;
+}
+
+.contact-email {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 4px;
+  background: var(--Primary-500, #a53dff);
+}
+
+/* .contact-email:hover {
+  background: rgba(165, 61, 255, 0.2);
+  border-color: rgba(165, 61, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(165, 61, 255, 0.3);
+} */
+
+.contact-email img {
+  filter: brightness(0) invert(1);
+}
+
+.contact-email a {
+  text-decoration: none;
+  color: #fff;
+
+  /* Body/Regular/600 */
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+/* .contact-email a:hover {
+  color: #ff6b9d;
+} */
+
+.contact-social {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.contact-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.contact-social a:hover {
+  background: rgba(165, 61, 255, 0.2);
+  border-color: #a53dff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(165, 61, 255, 0.4);
+}
+
+.contact-social a img {
+  filter: brightness(0) saturate(100%) invert(52%) sepia(96%) saturate(4937%)
+    hue-rotate(267deg) brightness(96%) contrast(103%);
+  transition: transform 0.3s ease;
+}
+
+.contact-social a:hover img {
+  transform: scale(1.2);
+}

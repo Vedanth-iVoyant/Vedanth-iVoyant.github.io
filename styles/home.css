@@ -1,0 +1,106 @@
+/* Hero Section - Main Container */
+.hero {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 80px 10%;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Hero Content Container */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 600px;
+  z-index: 2;
+}
+
+/* Main Heading Styles */
+.hero-content h1 {
+  color: var(--Gray-900, #132238);
+
+  /* Display */
+  font-family: "Work Sans";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 84px; /* 116.667% */
+}
+
+/* Paragraph Styles */
+.hero-content p {
+  width: 648px;
+  color: #556070;
+
+  /* Body/Large/400 */
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+
+/* Strong text emphasis */
+.hero-content p strong {
+  color: var(--Gray-900, #132238);
+
+  /* Body/Large/400 */
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Call-to-Action Button */
+.hero-content a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  gap: 12px;
+  border-radius: 4px;
+  background: var(--Primary-500, #a53dff);
+  color: #fff;
+
+  /* Body/Regular/600 */
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-content a:hover {
+  background: #501d7c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Image Container */
+.hero-image {
+  position: absolute;
+  right: 120px;
+  top: 55%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Hero Image Styling */
+.hero-image img {
+  width: 536px;
+  height: 636px;
+  border-radius: 25px;
+  background: url(/images/myPhoto2.png) lightgray -268.305px 4.955px / 196.151% 110.22%
+      no-repeat,
+    #fff;
+  box-shadow: 0px 24px 116px 0px rgba(43, 56, 76, 0.09);
+}
