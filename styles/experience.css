@@ -1,6 +1,8 @@
 .experience {
   display: flex;
-  padding: 150px 10%;
+  padding: 0 10%;
+  padding-top: 248px;
+  padding-bottom: 140px;
   align-items: center;
   gap: 143px;
   background: var(--Gray-50, #f0f1f3);
@@ -116,4 +118,168 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+}
+
+/* Mobile Responsive Media Queries */
+
+/* Tablet styles (768px and below) */
+@media (max-width: 768px) {
+  .experience {
+    padding: 80px 5%;
+    gap: 60px;
+  }
+
+  .experience-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .experience-left {
+    align-items: center;
+    text-align: center;
+  }
+  .experience-left h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .experience-left p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .experience-card {
+    padding: 24px;
+  }
+
+  .experience-card h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .experience-card p:last-child {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+/* Mobile styles (480px and below) */
+@media (max-width: 480px) {
+  .experience {
+    padding: 60px 4%;
+    gap: 40px;
+  }
+
+  .experience-container {
+    gap: 30px;
+  }
+
+  .experience-left {
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience-left h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .experience-left p {
+    font-size: 14px;
+    line-height: 20px;
+    gap: 12px;
+  }
+
+  .experience-right {
+    gap: 16px;
+  }
+
+  .experience-card {
+    padding: 20px;
+    gap: 6px;
+  }
+
+  .experience-card h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .experience-card p:nth-child(2) {
+    font-size: 0.85rem;
+  }
+
+  .experience-card p:nth-child(3) {
+    font-size: 0.8rem;
+  }
+
+  .experience-card p:last-child {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  /* Reduce hover effects on mobile */
+  .experience-card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* Extra small mobile (320px and below) */
+@media (max-width: 320px) {
+  .experience {
+    padding: 40px 3%;
+    gap: 30px;
+  }
+
+  .experience-left h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .experience-left p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .experience-card {
+    padding: 16px;
+  }
+
+  .experience-card h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .experience-card p:nth-child(2) {
+    font-size: 0.8rem;
+  }
+
+  .experience-card p:nth-child(3) {
+    font-size: 0.75rem;
+  }
+
+  .experience-card p:last-child {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+/* Landscape mobile orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  .experience {
+    padding: 40px 5%;
+  }
+
+  .experience-container {
+    gap: 40px;
+  }
+
+  .experience-left h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }

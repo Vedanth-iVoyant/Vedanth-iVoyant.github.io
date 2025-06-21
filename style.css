@@ -5,7 +5,9 @@
 body {
   width: 100%;
   height: 100%;
-  padding-top: 96px;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -86,4 +88,122 @@ body {
 
 .nav-links li a:hover {
   color: #a53dff;
+}
+
+/* Large tablets */
+@media (max-width: 1024px) {
+  .navbar {
+    position: absolute;
+    padding: 20px 8%;
+  }
+
+  .logo-name {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .circle-logo {
+    font-size: 22px;
+    line-height: 52px;
+    padding: 0px 18px;
+  }
+
+  .nav-links li {
+    padding: 10px 20px;
+  }
+
+  .nav-links li a {
+    font-size: 15px;
+  }
+}
+
+/* Tablets and below - Hide navigation links */
+@media (max-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+
+  .navbar {
+    position: absolute;
+    padding: 15px 5%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Hide navigation links on mobile */
+  .nav-links {
+    display: none;
+  }
+
+  /* Center the logo */
+  .nav-title {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .circle-logo {
+    font-size: 20px;
+    line-height: 44px;
+    padding: 0px 16px;
+  }
+
+  .logo-name {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .navbar {
+    position: absolute;
+    padding: 12px 4%;
+  }
+
+  .nav-title {
+    gap: 8px;
+  }
+
+  .circle-logo {
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0px 14px;
+  }
+
+  .logo-name {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  body {
+    padding-top: 65px;
+  }
+
+  .navbar {
+    position: absolute;
+    padding: 10px 3%;
+  }
+
+  .nav-title {
+    gap: 6px;
+  }
+
+  .circle-logo {
+    font-size: 16px;
+    line-height: 36px;
+    padding: 0px 12px;
+  }
+
+  .logo-name {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
